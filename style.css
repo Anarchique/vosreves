@@ -316,3 +316,69 @@ body.modal-open { overflow: hidden; }
 .company-card > .company-lead { color: var(--ink); font-size: 17px; font-weight: 550; letter-spacing: -.025em; }
 .destination-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .destination-list span { padding: 7px 10px; background: var(--soft); border: 1px solid var(--line); border-radius: 4px; color: var(--accent); font-size: 10px; font-weight: 600; }
+
+/* ==================== ADMINISTRATION ==================== */
+.admin-footer-link { margin-left: auto; color: var(--quiet); font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.admin-footer-link:hover { color: var(--ink); }
+.admin-wrap { max-width: 960px; min-height: calc(100vh - 68px); padding-top: 54px; padding-bottom: 64px; }
+.admin-login { max-width: 620px; margin: 4vh auto; }
+.admin-login h1, .admin-heading h1 { font-size: clamp(38px,5vw,54px); }
+.admin-intro { max-width: 610px; margin: 14px 0 23px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.admin-login-card, .admin-section, .admin-notice { padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.admin-login-card > label, .admin-field { display: flex; flex-direction: column; gap: 7px; color: var(--accent); font-size: 10px; font-weight: 600; }
+.admin-login-card input, .admin-field input, .admin-field textarea { width: 100%; min-height: 39px; padding: 9px 10px; color: var(--ink); background: var(--page); border: 1px solid var(--line); border-radius: 4px; font: inherit; font-size: 11px; font-weight: 400; }
+.admin-field textarea { min-height: 76px; resize: vertical; line-height: 1.6; }
+.admin-login-card .button-link { margin-top: 12px; cursor: pointer; }
+.admin-security-note, .admin-help { margin: 16px 0 0; padding-top: 13px; color: var(--muted); border-top: 1px solid var(--line); font-size: 10px; line-height: 1.7; }
+.admin-security-note code, .admin-notice code { padding: 2px 4px; background: var(--soft); border: 1px solid var(--line); border-radius: 3px; font-size: 9px; }
+.admin-error { min-height: 16px; margin: 8px 0 0; color: #9F3A38; font-size: 10px; }
+.admin-dashboard[hidden], .admin-login[hidden] { display: none; }
+.admin-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 22px; }
+.admin-heading .admin-intro { margin-bottom: 0; }
+.admin-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; max-width: 400px; }
+.admin-button { display: inline-flex; justify-content: center; align-items: center; min-height: 34px; padding: 7px 11px; color: #fff; background: var(--accent); border: 1px solid var(--accent); border-radius: 4px; font: inherit; font-size: 9px; font-weight: 600; cursor: pointer; }
+.admin-button:hover { background: #334155; }
+.admin-button.secondary { color: var(--accent); background: var(--surface); border-color: var(--line); }
+.admin-button.secondary:hover { background: var(--soft); border-color: #94A3B8; }
+.admin-button.text-button { color: var(--muted); background: transparent; border-color: transparent; }
+.admin-button.small { min-height: 27px; padding: 5px 8px; font-size: 8px; }
+.import-button { position: relative; overflow: hidden; }
+.import-button input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.admin-notice { display: grid; grid-template-columns: 170px 1fr; gap: 15px; padding: 14px 16px; background: var(--soft); color: var(--muted); font-size: 10px; line-height: 1.65; }
+.admin-notice strong { color: var(--ink); }
+.admin-status { min-height: 18px; margin: 11px 2px 20px; color: var(--muted); font-size: 10px; }
+.admin-section { margin-top: 12px; padding: 19px; }
+.admin-section-title { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 14px; }
+.admin-section-title .eyebrow { margin-bottom: 6px; }
+.admin-section-title h2 { margin: 0; font-size: 17px; letter-spacing: -.03em; }
+.admin-page-tabs { display: flex; gap: 5px; margin-bottom: 14px; padding-bottom: 11px; border-bottom: 1px solid var(--line); }
+.admin-page-tabs button { padding: 7px 10px; color: var(--muted); background: transparent; border: 1px solid transparent; border-radius: 4px; font: inherit; font-size: 10px; cursor: pointer; }
+.admin-page-tabs button[aria-selected="true"] { color: var(--ink); background: var(--soft); border-color: var(--line); font-weight: 600; }
+.admin-fields, .admin-record-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.admin-field { min-width: 0; }
+.admin-records { display: grid; gap: 9px; }
+.admin-record { min-width: 0; padding: 13px; background: #fff; border: 1px solid var(--line); border-radius: 5px; }
+.admin-record-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 11px; }
+.admin-record-head > strong { color: var(--accent); font-size: 10px; }
+.admin-record-actions { display: flex; gap: 5px; }
+.admin-record-fields { align-items: start; }
+.admin-record-fields > img.admin-thumb { width: min(100%,150px); height: 84px; object-fit: cover; background: var(--soft); border: 1px solid var(--line); border-radius: 3px; }
+.admin-poster { display: flex; align-items: end; gap: 12px; flex-wrap: wrap; }
+.admin-poster > label:first-child { flex: 1 1 320px; display: grid; gap: 7px; color: var(--accent); font-size: 10px; font-weight: 600; }
+.admin-poster input[type="url"] { min-height: 39px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 4px; background: var(--page); font: inherit; font-size: 11px; }
+.admin-poster img { width: 145px; height: 90px; object-fit: cover; border: 1px solid var(--line); border-radius: 4px; }
+.admin-footer { display: flex; justify-content: space-between; padding-top: 20px; color: var(--muted); font-size: 9px; }
+.admin-footer a:hover { color: var(--ink); text-decoration: underline; }
+.poster-art { overflow: hidden; }
+.poster-bg-img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.custom-info-block .company-card h2 { margin: 0 0 9px; font-size: 18px; }
+.custom-info-block .company-card p { margin: 0; }
+@media (max-width:760px) {
+ .admin-wrap { padding-top: 30px; }
+ .admin-heading { display: block; }
+ .admin-actions { justify-content: flex-start; max-width: none; margin-top: 16px; }
+ .admin-notice { grid-template-columns: 1fr; gap: 3px; }
+ .admin-fields, .admin-record-fields { grid-template-columns: 1fr; }
+ .admin-section { padding: 14px; }
+ .admin-record-fields > img.admin-thumb { width: 100%; height: 140px; }
+}
