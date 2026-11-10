@@ -12,10 +12,14 @@
     
         <meta name="description" content="Journée de cohésion de l’équipe commerciale Vos Rêves à Valence.">
     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     
         <script src="content.js" defer>
     </script>
+        <script src="sand.js" defer></script>
     
         <script src="main.js" defer>
     </script>
@@ -77,7 +81,7 @@
             <!-- ==================== INTRODUCTION ==================== -->
 
       
-            <section class="page-intro wrap" aria-labelledby="page-title">
+            <section class="page-intro wrap travel-hero hero-home" aria-labelledby="page-title">
         
                 <div class="breadcrumbs">
                     <span>VIE D’ÉQUIPE
@@ -124,11 +128,17 @@
             </span>
           </aside>
         </div>
-        
+
+                <div class="sand-play" aria-label="Bac à sable interactif">
+                    <div class="sand-instructions"><span class="sand-spark" aria-hidden="true"></span> Laissez une trace dans le sable <span class="sand-hint">· glissez votre doigt ou votre souris</span></div>
+                    <canvas class="sand-canvas" aria-label="Zone de sable interactive. Faites glisser le pointeur pour dessiner. Utilisez le bouton pour lisser le sable."></canvas>
+                    <button class="sand-clear" type="button" data-sand-clear>Lisser le sable</button>
+                </div>
       </section>
 
       
             <!-- ==================== CHIFFRES CLÉS ==================== -->
+
 
       
             <section class="kpi-grid wrap" aria-label="Chiffres clés du séminaire" data-kpi-grid>
