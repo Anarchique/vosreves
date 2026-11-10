@@ -1,10 +1,17 @@
 # Vos Rêves — séminaire d’intégration
 
-Site vitrine statique en français pour le séminaire d’équipe de Vos Rêves à Valence. Aucun serveur ni outil de compilation n’est requis.
+Site vitrine statique en français pour le séminaire d’équipe de Vos Rêves à Valence. Aucun serveur ni outil de compilation n’est requis. Les neuf fichiers livrés se trouvent dans `seminaire-vos-reves.zip`.
 
 ## Lancer le site
 
 Ouvrez `index.html` dans un navigateur récent (ordinateur ou mobile). Les pages, styles, scripts et contenu par défaut doivent rester dans le même dossier. Le site est également compatible avec un hébergement statique comme GitHub Pages.
+
+## Fichiers du site
+
+- `index.html`, `programme.html`, `galerie.html` : pages publiques.
+- `admin.html` et `admin.js` : panneau d’administration.
+- `main.js` : navigation, contenus dynamiques, filtres et visionneuse.
+- `content.js` : données par défaut ; `style.css` : styles communs.
 
 ## Administrer le contenu
 
